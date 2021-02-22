@@ -43,9 +43,7 @@ public class TriangleFive
 				for(int j = 0; j < count ; j++) {
 					if(templetter == 'Z') {
 						templetter = (char)('Z' - (26 * i));
-					} else {
-//						temp_letter = (char) (temp_letter + i);
-					};
+					} 
 					output = output + ((char) (templetter + i));	
 				};
 				output = output + (" ");
