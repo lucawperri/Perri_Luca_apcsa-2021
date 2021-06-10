@@ -153,6 +153,16 @@ public class PictureTester
       swan.explore();
   }
   
+  public static void testBlur(int x, int y, int w, int h, int n)
+  {
+     Picture redMoto = new Picture("C:\\Users\\Owner\\Documents\\GitHub\\Perri_Luca_apcsa-2021\\Unit 16\\src\\images\\redMotorcycle.jpg");
+     for (int i = 0; i<n; i++){
+        redMoto.blur(x,y,w,h);
+      }
+      redMoto.explore();
+  }
+
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -160,6 +170,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+	  testBlur(180,160,25,25,10); 
     //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
